@@ -1,4 +1,4 @@
-package model;
+package br.com.suporteCFTV.model;
 
 public class Cliente {
     private int idCliente;

@@ -1,26 +1,24 @@
 package br.com.suporteCFTV.model;
 
-public class Atendente {
-    private int idAtendente;
+public class Gerente {
+    private int idGerente;
     private String nomeCompleto;
     private String login;
     private String senhaHash;
     private String emailEmpresa;
     private boolean ativo;
 
-    public Atendente(int idAtendente, String nomeCompleto, String login, String senhaHash, String emailEmpresa, boolean isAtivo) {
-        this.idAtendente = idAtendente;
+    public Gerente(int idGerente, String nomeCompleto, String login, String senhaHash, String emailEmpresa, boolean ativo) {
+        this.idGerente = idGerente;
         this.nomeCompleto = nomeCompleto;
         this.login = login;
         this.senhaHash = senhaHash;
         this.emailEmpresa = emailEmpresa;
-        this.ativo = isAtivo;
+        this.ativo = ativo;
     }
 
-    public int getIdAtendente() {
-        return idAtendente;
-    }
-    public void setIdAtendente(int idAtendente) {this.idAtendente = idAtendente;}
+    public int getIdGerente() {return idGerente;}
+    public void setIdGerente(int idGerente) {this.idGerente = idGerente;}
     public String getNomeCompleto() {return nomeCompleto;}
     public void setNomeCompleto(String nomeCompleto) {this.nomeCompleto = nomeCompleto;}
     public String getLogin() {return login;}
@@ -34,6 +32,6 @@ public class Atendente {
 
     @Override
     public String toString() {
-        return idAtendente +  ";" + nomeCompleto + ";" + login + ";" + senhaHash + ";" + emailEmpresa+ ";" + ativo;
+        return idGerente +  ";" + nomeCompleto + ";" + login + ";" + senhaHash + ";" + emailEmpresa + ";" + ativo;
     }
 }
