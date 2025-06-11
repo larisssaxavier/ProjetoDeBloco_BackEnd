@@ -17,9 +17,7 @@ public class Atendente {
         this.ativo = isAtivo;
     }
 
-    public int getIdAtendente() {
-        return idAtendente;
-    }
+    public int getIdAtendente() {return idAtendente;}
     public void setIdAtendente(int idAtendente) {this.idAtendente = idAtendente;}
     public String getNomeCompleto() {return nomeCompleto;}
     public void setNomeCompleto(String nomeCompleto) {this.nomeCompleto = nomeCompleto;}
@@ -34,6 +32,10 @@ public class Atendente {
 
     @Override
     public String toString() {
+        return idAtendente +  ";" + nomeCompleto + ";" + login + ";" + senhaHash + ";" + emailEmpresa+ ";" + ativo;
+    }
+
+    public String toCsvString(String delimiter) {
         return idAtendente +  ";" + nomeCompleto + ";" + login + ";" + senhaHash + ";" + emailEmpresa+ ";" + ativo;
     }
 }

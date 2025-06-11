@@ -34,4 +34,8 @@ public class Gerente {
     public String toString() {
         return idGerente +  ";" + nomeCompleto + ";" + login + ";" + senhaHash + ";" + emailEmpresa + ";" + ativo;
     }
+
+    public String toCsvString(String delimiter) {
+        return idGerente +  ";" + nomeCompleto + ";" + login + ";" + senhaHash + ";" + emailEmpresa + ";" + ativo;
+    }
 }

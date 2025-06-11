@@ -19,6 +19,19 @@ public class Cliente {
         this.dataCadastro = dataCadastro;
     }
 
+    public String toCsvString() {
+        return String.join(";",
+                String.valueOf(this.idCliente),
+                this.nomeContato != null ? this.nomeContato : "",
+                this.nomeEmpresa != null ? this.nomeEmpresa : "",
+                this.documento != null ? this.documento : "",
+                this.telefone != null ? this.telefone : "",
+                this.email != null ? this.email : "",
+                this.dataCadastro != null ? this.dataCadastro : ""
+        );
+    }
+
+
     public int getIdCliente() {return idCliente;}
     public void setIdCliente(int idCliente) {this.idCliente = idCliente;}
     public String getNomeContato() {return nomeContato;}

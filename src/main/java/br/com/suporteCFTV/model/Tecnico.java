@@ -34,4 +34,8 @@ public class Tecnico {
     public String toString() {
         return idTecnico +  ";" + nomeCompleto + ";" + login + ";" + senhaHash + ";" + emailEmpresa + ";" + ativo;
     }
+
+    public String toCsvString(String delimiter) {
+        return idTecnico +  ";" + nomeCompleto + ";" + login + ";" + senhaHash + ";" + emailEmpresa + ";" + ativo;
+    }
 }
